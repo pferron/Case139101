@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# NOTE: We only use this Pipfile to manage dev and test dependencies.
+# Dependencies for releases of the library itself should be added in
+# setup.py. See https://docs.pipenv.org/advanced/#pipfile-vs-setup-py
+# for more information on why things are done in this way.
+
+[dev-packages]
+transformers = "==4.42.3"
+datasets = "==2.4.0"
+seqeval = "==1.2.2"
+typing-extensions = "==4.12.2"
+spacy = "==3.5.3"
+sentencepiece = "==0.1.97"
+sentence-transformers = "==2.2.2"
+protobuf = "==3.20.2"
+clearml-serving = "==1.3.0"
+pydantic = "==1.8.2"
+pyarrow = "==14.0.1"
+pillow = "==10.3.0"
+aiohttp = "==3.9.5"
+nltk = "==3.8.1"
+torch = "==2.2.0"
+
+[requires]
+python_version = "3.9"
